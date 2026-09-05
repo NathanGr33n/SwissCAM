@@ -15,10 +15,11 @@ _SAFE_NAME = re.compile(r"^[A-Za-z0-9._\-]+$")
 
 
 def assert_safe_filename(name: str) -> str:
-    base = Path(name).name
-    if not base or not _SAFE_NAME.match(base):
+    if not name or name != Path(name).name:
         raise ValueError(f"Unsafe file name: {name!r}")
-    return base
+    if not _SAFE_NAME.match(name):
+        raise ValueError(f"Unsafe file name: {name!r}")
+    return name
 
 
 def resolve_under(root: Path, path: Path | str) -> Path:
