@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "citizen_l20_viii",
+  "name": "Citizen Cincom L20 Type VIII",
+  "vendor": "Citizen",
+  "model": "L20-VIII",
+  "control_family": "meldas_citizen_multi_system",
+  "axes": [
+    {
+      "name": "X1",
+      "min_mm": -10.0,
+      "max_mm": 50.0,
+      "rapid_m_per_min": 32.0
+    },
+    {
+      "name": "Y1",
+      "min_mm": -20.0,
+      "max_mm": 40.0,
+      "rapid_m_per_min": 32.0
+    },
+    {
+      "name": "Z1",
+      "min_mm": -5.0,
+      "max_mm": 220.0,
+      "rapid_m_per_min": 32.0
+    },
+    {
+      "name": "X2",
+      "min_mm": -10.0,
+      "max_mm": 50.0,
+      "rapid_m_per_min": 32.0
+    },
+    {
+      "name": "Z2",
+      "min_mm": -5.0,
+      "max_mm": 150.0,
+      "rapid_m_per_min": 32.0
+    }
+  ],
+  "spindles": [
+    {
+      "name": "main",
+      "rpm_max": 10000.0,
+      "power_kw": [
+        2.2,
+        3.7,
+        5.5
+      ]
+    },
+    {
+      "name": "sub",
+      "rpm_max": 10000.0,
+      "power_kw": [
+        1.5,
+        2.2,
+        3.7
+      ]
+    }
+  ],
+  "bar": {
+    "max_diameter_mm": 20.0,
+    "optional_max_diameter_mm": 25.0,
+    "gb_max_length_mm": 200.0,
+    "gbl_max_length_mm": 50.0,
+    "modes": [
+      "GB",
+      "GBL"
+    ],
+    "max_unsupported_stickout_mm": 40.0
+  },
+  "tooling": {
+    "stations": [
+      {
+        "id": "G1",
+        "zone": "gang",
+        "index": 1,
+        "live": false,
+        "x_mm": 0,
+        "z_mm": 0
+      },
+      {
+        "id": "G2",
+        "zone": "gang",
+        "index": 2,
+        "live": false
+      },
+      {
+        "id": "G3",
+        "zone": "gang",
+        "index": 3,
+        "live": false
+      },
+      {
+        "id": "G4",
+        "zone": "gang",
+        "index": 4,
+        "live": false
+      },
+      {
+        "id": "F1",
+        "zone": "front",
+        "index": 1,
+        "live": false
+      },
+      {
+        "id": "B1",
+        "zone": "back",
+        "index": 1,
+        "live": false
+      }
+    ]
+  },
+  "clearances": [
+    {
+      "name": "guide_bushing",
+      "x_min_mm": -1.0,
+      "x_max_mm": 30.0,
+      "z_min_mm": -2.0,
+      "z_max_mm": 5.0
+    }
+  ],
+  "capabilities": {
+    "c_axis": true,
+    "spindle_sync": true,
+    "superimpose": false,
+    "cross_work": false,
+    "lfv": true,
+    "b_axis": false,
+    "multi_system": true
+  },
+  "default_post_id": "citizen_meldas_l20",
+  "notes": "Public-spec seed profile; validate travel limits on target serial."
+}

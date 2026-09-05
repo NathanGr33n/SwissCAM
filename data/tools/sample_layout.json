@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "id": "sample_layout_a",
+  "name": "Layout A bar work",
+  "machine_profile_id": "citizen_l20_viii",
+  "assignments": [
+    {
+      "station_id": "G1",
+      "tool_id": "od_rough_cnmg",
+      "t_code": "T0101"
+    },
+    {
+      "station_id": "G2",
+      "tool_id": "od_finish_dcmt",
+      "t_code": "T0202"
+    },
+    {
+      "station_id": "G3",
+      "tool_id": "groove_2mm",
+      "t_code": "T0303"
+    },
+    {
+      "station_id": "G4",
+      "tool_id": "cutoff_2mm",
+      "t_code": "T0404"
+    }
+  ]
+}

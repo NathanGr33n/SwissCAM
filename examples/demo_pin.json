@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "id": "pin_demo",
+  "name": "demo_pin",
+  "source_path": null,
+  "units": "mm",
+  "profile": [
+    {
+      "z_mm": 0.0,
+      "x_radius_mm": 5.0
+    },
+    {
+      "z_mm": 8.0,
+      "x_radius_mm": 5.0
+    },
+    {
+      "z_mm": 8.0,
+      "x_radius_mm": 4.0
+    },
+    {
+      "z_mm": 15.0,
+      "x_radius_mm": 4.0
+    },
+    {
+      "z_mm": 15.0,
+      "x_radius_mm": 3.5
+    },
+    {
+      "z_mm": 17.0,
+      "x_radius_mm": 3.5
+    },
+    {
+      "z_mm": 17.0,
+      "x_radius_mm": 4.0
+    },
+    {
+      "z_mm": 25.0,
+      "x_radius_mm": 4.0
+    }
+  ],
+  "stock": {
+    "diameter_mm": 12.0,
+    "material_id": "304SS",
+    "length_mm": 25.0,
+    "allowance_face_mm": 0.2
+  },
+  "notes": "Synthetic stepped pin with groove for pipeline demos"
+}

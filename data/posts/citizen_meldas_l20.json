@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "id": "citizen_meldas_l20",
+  "name": "Citizen Meldas L20-style",
+  "control_family": "meldas_citizen_multi_system",
+  "diameter_mode": true,
+  "absolute": true,
+  "units": "mm",
+  "program_number": 1001,
+  "z0_policy": "part_face",
+  "systems": [
+    "$1",
+    "$2"
+  ],
+  "g_map": {
+    "rapid": "G00",
+    "linear": "G01",
+    "dwell": "G04",
+    "metric": "G21",
+    "absolute": "G90",
+    "feed_per_rev": "G99",
+    "css_on": "G96",
+    "css_off": "G97"
+  },
+  "m_map": {
+    "main_cw": 3,
+    "main_stop": 5,
+    "coolant_on": 52,
+    "coolant_off": 53,
+    "part_count": 56,
+    "program_end": 30,
+    "back_cw": 23,
+    "back_stop": 25,
+    "chuck_close": 6,
+    "chuck_open": 7,
+    "back_chuck_close": 15,
+    "back_chuck_open": 16
+  },
+  "wait_format": "!{id}",
+  "mode_codes": {
+    "G610": "G610",
+    "G650": "G650",
+    "G600": "G600"
+  },
+  "header_template": "",
+  "footer_template": "",
+  "number_format": "0.001",
+  "line_numbers": false,
+  "comments": true
+}

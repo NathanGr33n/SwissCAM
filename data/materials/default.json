@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "id": "default_materials",
+  "materials": [
+    {
+      "id": "304SS",
+      "name": "304 Stainless",
+      "class_name": "stainless",
+      "default_sfm": 120.0,
+      "default_feed_mm_rev": 0.12,
+      "default_doc_mm": 0.8
+    },
+    {
+      "id": "1018",
+      "name": "1018 Steel",
+      "class_name": "steel",
+      "default_sfm": 180.0,
+      "default_feed_mm_rev": 0.18,
+      "default_doc_mm": 1.0
+    },
+    {
+      "id": "generic_steel",
+      "name": "Generic steel",
+      "class_name": "steel",
+      "default_sfm": 150.0,
+      "default_feed_mm_rev": 0.15,
+      "default_doc_mm": 0.9
+    }
+  ]
+}

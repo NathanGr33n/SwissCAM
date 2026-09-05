@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "id": "sample_crib",
+  "name": "Sample Swiss crib",
+  "tools": [
+    {
+      "schema_version": "1.0",
+      "id": "od_rough_cnmg",
+      "name": "OD rough CNMG",
+      "tool_type": "od_turn",
+      "holder": "12sq",
+      "insert": "CNMG090304",
+      "nose_radius_mm": 0.4,
+      "max_doc_mm": 1.5,
+      "materials": [
+        {
+          "material_class": "stainless",
+          "surface_m_per_min": 120.0,
+          "feed_mm_rev": 0.15,
+          "doc_mm": 1.0
+        },
+        {
+          "material_class": "steel",
+          "surface_m_per_min": 180.0,
+          "feed_mm_rev": 0.2,
+          "doc_mm": 1.2
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "od_finish_dcmt",
+      "name": "OD finish DCMT",
+      "tool_type": "od_turn",
+      "holder": "12sq",
+      "insert": "DCMT070204",
+      "nose_radius_mm": 0.2,
+      "max_doc_mm": 0.5,
+      "materials": [
+        {
+          "material_class": "stainless",
+          "surface_m_per_min": 140.0,
+          "feed_mm_rev": 0.08,
+          "doc_mm": 0.2
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "groove_2mm",
+      "name": "OD groove 2mm",
+      "tool_type": "groove",
+      "min_width_mm": 1.8,
+      "max_width_mm": 2.2,
+      "max_doc_mm": 2.0,
+      "materials": [
+        {
+          "material_class": "stainless",
+          "surface_m_per_min": 90.0,
+          "feed_mm_rev": 0.05,
+          "doc_mm": 0.5
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "id": "cutoff_2mm",
+      "name": "Cutoff 2mm",
+      "tool_type": "cutoff",
+      "min_width_mm": 1.8,
+      "max_width_mm": 2.2,
+      "max_doc_mm": 12.0,
+      "materials": [
+        {
+          "material_class": "stainless",
+          "surface_m_per_min": 80.0,
+          "feed_mm_rev": 0.04,
+          "doc_mm": 1.0
+        }
+      ]
+    }
+  ]
+}
